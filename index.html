@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<!-- Template by quackit.com -->
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Swoje JAJA</title>
+	
+	<style type="text/css">
+		#link { color: #FF0000; } /* kolor napisu */	
+		
+		/* Layout */
+		body {
+			min-width: 630px;
+		}
+
+		#container {
+			padding-left: 200px;
+			padding-right: 250px;
+		}
+		
+		#container .column {
+			position: relative;
+			float: left;
+		}
+		
+		#center {
+			padding: 10px 20px;
+			width: 100%;
+		}
+		
+		#left {
+			width: 130px;
+			padding: 0 10px;
+			right: 240px;
+			margin-left: -100%;
+		}
+		
+		#right {
+			width: 200px;
+			margin-right: -50%;
+		}
+		
+		#footer {
+			clear: both;
+		}
+		
+		/* IE hack */
+		* html #left {
+			left: 150px;
+		}
+
+		/* Make the columns the same height as each other */
+		#container {
+			overflow: hidden;
+		}
+
+		#container .column {
+			padding-bottom: 1001em;
+			margin-bottom: -1000em;
+		}
+
+		/* Fix for the footer */
+		* html body {
+			overflow: hidden;
+		}
+		
+		* html #footer-wrapper {
+			float: left;
+			position: relative;
+			width: 100%;
+			padding-bottom: 10010px;
+			margin-bottom: -10000px;
+			background: #fff;
+		}
+
+		/* Aesthetics */
+		body {
+			margin: 0;
+			padding: 0;
+			font-family:Sans-serif;
+			line-height: 1.5em;
+		}
+		
+		p {
+			color: #555;
+		}
+
+		nav ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+		}
+		
+		nav ul a {
+			color: darkgreen;
+			text-decoration: none;
+		}
+
+		#header, #footer {									
+			font-size: large;
+			padding: 0.3em;
+			background: #BCCE98;
+		}
+
+		#left {
+			background: #DAE9BC;
+		}
+		
+		#right {
+			background: #F7FDEB;
+		}
+
+		#center {
+			background: #fff;
+		}
+
+		#container .column {
+			padding-top: 1em;
+		}
+		
+	</style>
+</head>
+
+<body>
+
+	<header id="header">										<!-- nagłówek -->
+		<div style="text-align: center;">
+			<p>Swoje JAJA</p>
+		</div>	
+	</header>
+
+	<div id="container">										<!-- środkowa kolumna -->
+
+		<main id="center" class="column">
+			<article>
+			
+				<div style="text-align: center;">
+					<p>
+						Chcesz kupić jajka? Dobrze trafiłeś.
+					</p>
+				</div>		
+			</article>								
+		</main>
+
+		<nav id="left" class="column">							<!-- lewa kolumna -->
+			<h3>Nawigacja</h3>
+			<ul>
+				<li><a href="#">Strona główna</a></li>
+				<li><a href="#">Skład jaja</a></li>
+				<li><a href="#">Rodzaje chowu</a></li>
+				<li><a href="#">Minutnik</a></li>
+				<li><a href="#">Czytnik jaj</a></li>
+				<li><a id="link" href="#">Złóż zamówienie</a></li>
+			</ul>
+
+		</nav>
+
+		<div id="right" class="column">							<!-- prawa kolumna -->
+			<h3>Ankieta</h3>
+			<p>
+				<p>Najbardziej lubię jajka z:</p>
+					<input type="radio" name="Wiek" value="mniej niż 15">Chowu ekologicznego<br>
+					<input type="radio" name="Wiek" value="15-19">Wolnego wybiegu<br>
+					<input type="radio" name="Wiek" value="20-29">Chowu ściółkowego<br>
+					<input type="radio" name="Wiek" value="30-39">Chowu klatkowego<br>
+					<input type="submit" value="Zagłosuj">
+			</p>
+		</div>
+
+	</div>
+	
+
+	<div class="footer">										<!-- początek stopki -->
+		<div style="text-align: right;">						<!-- ustawienie stopki po prawej -->
+		<footer id="footer">
+			<p>
+			<sup>©</sup>Copyright 2019 by Łuki							<!-- treść stopki -->
+			</p>
+		</footer>
+		</div>	
+	</div>
+
+</body>
+</html>
